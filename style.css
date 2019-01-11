@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+html {
+  font-family: 'Noto';
+}
+
+footer {
+  background-color: grey;
+}
+.color-critical {
+  background-color: red;
+}
+
+.color-warning {
+  background-color: #bbddaa;
+}
+
+.color-info {
+  background-color: #ccffee;
+}
+
+
+html body > article[id^='page-'] {
+   height: 297mm;
+   width: 210mm;
+   position: relative;
+ }
+
+
+ html body > article > header {
+   padding : 1cm;
+   color: #2e2e2e;
+   /* position: fixed; */
+   width: 210mm;
+   height: 3cm;
+ }
+
+ html body > article > footer {
+    position: fixed;
+    height: 3cm;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    padding-top : 1cm;
+    padding-bottom: 1cm;
+ }
+
+ html body > article > section {
+    /* position: absolute; */
+    /* margin-top: 50mm; */
+    height: 207mm;
+    width: 210mm;
+    padding :0cm 1cm .5cm 1cm;
+    /* border: 1px dashed #555; */
+ }
+
+
+
+
+header h1 {
+  font-size: 18pt;
+  text-align: right;
+  padding-right: 50px;
+}
+header h2 {
+  font-size: 18pt;
+}
+
+.document-bloc:first-child {
+  padding-top: 1cm;
+}
+.document-bloc {
+  padding :0cm 1cm 1cm 1cm;
+}
+.document-bloc h1 {
+  font-weight: bold;
+  font-size: 16pt;
+  color: #2e2e2e;
+  margin-bottom: .5cm;
+}
+.document-bloc table tr.spacer {
+  height: .5cm;
+}
+.document-bloc table tr td:first-child, .document-bloc h2 {
+  color: #333333;
+  font-weight: bold;
+}
+.document-bloc table tr td:first-child {
+  width: 8cm;
+}
+.document-bloc h2 {
+  margin-bottom: .25cm;
+}
+
+
+html body > article > footer p:last-child {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:#ccdeaf;
+}
